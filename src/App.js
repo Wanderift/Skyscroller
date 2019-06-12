@@ -149,7 +149,6 @@ function App() {
       setFlights(filteredFlights);
     } else if (selectPriceRange != "all") {
       const filteredFlights = flights.filter(item => {
-        
         if (
           parseFloat(item["Price"]) >= parseFloat(selectPriceRange.from) &&
           parseFloat(item["Price"]) <= parseFloat(selectPriceRange.to)
@@ -164,7 +163,7 @@ function App() {
     ) {
       const filteredFlights = flights.filter(item => {
         console.log();
-        
+
         if (
           parseFloat(item["Price"]) >= parseFloat(selectPriceRange.from) &&
           parseFloat(item["Price"]) <= parseFloat(selectPriceRange.to)
@@ -970,18 +969,64 @@ function App() {
                       <div className="post">
                         <div className="row">
                           <div className="col-md-2">
-                            <img src="Assets/images/wanderift.png" alt />
+                            <img
+                              src="Assets/images/wanderift_icon.png"
+                              style={{ width: "60px", height: "60px" }}
+                              alt
+                            />
                           </div>
-                          <div className="col-md-10">
-                            <p>
-                              Welcome to sky<span>Scroller</span> powered by
-                              wanderift check out feed for the best deals on
-                              flight both domestic and international
+                          <div className="col-md-10 col-sm-12">
+                            <p style={{ fontSize: "14px" }}>
+                              Welcome to sky<span>scroller</span> powered by
+                              Wanderift. Scroll through the cheapest flights
+                              around. Want to search for deals out of your city?
+                              Not a problem, just select your origin city and
+                              price range than start scrolling!
                             </p>
                           </div>
                         </div>
                         <hr />
-                        <br />
+                        <div className="bottom">
+                          <div className="row">
+                            <div className="col-md-3">
+                              <a href="#">
+                                <img
+                                  src="Assets/images/share.png"
+                                  style={{ height: "25px", width: "25px" }}
+                                  alt
+                                />
+                              </a>{" "}
+                              Give us a share
+                            </div>
+                            <div className="col-md-6 col-sm-12">
+                              Check us Out on Social &nbsp;
+                              <a href="#">
+                                <img
+                                  src="Assets/images/instagram.png"
+                                  style={{ height: "25px", width: "25px" }}
+                                  alt
+                                />
+                              </a>
+                              <a href="#">
+                                <img
+                                  src="Assets/images/twitter.png"
+                                  style={{ height: "25px", width: "25px" }}
+                                  alt
+                                />
+                              </a>
+                              <a href="#">
+                                <img
+                                  src="Assets/images/facebook.png"
+                                  style={{ height: "25px", width: "25px" }}
+                                  alt
+                                />
+                              </a>
+                            </div>
+                            <div className="col-md-3">
+                              <div className="built">Built by Wanderift</div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                     <div
@@ -993,66 +1038,63 @@ function App() {
                       <div className="post">
                         <div className="row">
                           <div className="col-md-2">
-                            <img src="Assets/images/wanderift.png" alt />
+                            <img
+                              src="Assets/images/wanderift_icon.png"
+                              style={{ width: "60px", height: "60px" }}
+                              alt
+                            />
                           </div>
-                          <div className="col-md-10">
-                            <p>
-                              Welcome to deal<span>Scroller</span> powered by
-                              wanderift check out feed for the best deals on
-                              flight both domestic and international
+                          <div className="col-md-10 col-sm-12">
+                            <p style={{ fontSize: "14px" }}>
+                              Welcome to sky<span>scroller</span> powered by
+                              Wanderift. Scroll through the cheapest flights
+                              around. Want to search for deals out of your city?
+                              Not a problem, just select your origin city and
+                              price range than start scrolling!
                             </p>
                           </div>
                         </div>
                         <hr />
-                        <br />
-                      </div>
-                      <div className="post">
-                        <div className="row">
-                          <div className="col-md-8">
-                            <img src="Assets/images/wanderift.png" alt />
-                            <div className="title">Fresh Deal</div>
-                            <div className="post-time">
-                              Yesterday at 1:08 AM
-                            </div>
-                          </div>
-                          <div className="col-md-4">
-                            <div className="more">
+                        <div className="bottom">
+                          <div className="row">
+                            <div className="col-md-3">
                               <a href="#">
-                                <i className="fa fa-ellipsis-h" />
+                                <img
+                                  src="Assets/images/share.png"
+                                  style={{ height: "25px", width: "25px" }}
+                                  alt
+                                />
+                              </a>{" "}
+                              Give us a share
+                            </div>
+                            <div className="col-md-6 col-sm-12">
+                              Check us Out on Social &nbsp;
+                              <a href="#">
+                                <img
+                                  src="Assets/images/instagram.png"
+                                  style={{ height: "25px", width: "25px" }}
+                                  alt
+                                />
+                              </a>
+                              <a href="#">
+                                <img
+                                  src="Assets/images/twitter.png"
+                                  style={{ height: "25px", width: "25px" }}
+                                  alt
+                                />
+                              </a>
+                              <a href="#">
+                                <img
+                                  src="Assets/images/facebook.png"
+                                  style={{ height: "25px", width: "25px" }}
+                                  alt
+                                />
                               </a>
                             </div>
-                          </div>
-                        </div>
-                        <div className="post-img">
-                          <div className="row">
-                            <div className="col-md-12">
-                              <img src="Assets/images/post-img.png" alt />
+                            <div className="col-md-3">
+                              <div className="built">Built by Wanderift</div>
                             </div>
                           </div>
-                        </div>
-                        <div className="details">
-                          <p>$305 Round Trip:</p>
-                          <p />
-                          <p>
-                            San Fransico, CA{" "}
-                            <img src="Assets/images/airplane.png" alt /> New
-                            York, NY
-                          </p>
-                          <p />
-                          <p>06/26/2019 - 08/28/2019</p>
-                          <p>
-                            <i className="fa fa-thumbs-up" /> 92.2 likes{" "}
-                            <i
-                              className="fa fa-comment"
-                              style={{ paddingLeft: "20px" }}
-                            />{" "}
-                            view Deal{" "}
-                            <i
-                              className="fa fa-mobile"
-                              style={{ paddingLeft: "20px" }}
-                            />{" "}
-                            Notify Me About Deals like This
-                          </p>
                         </div>
                       </div>
                     </div>
