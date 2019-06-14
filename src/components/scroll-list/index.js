@@ -4,19 +4,26 @@ import { Waypoint } from "react-waypoint";
 
 
 function priceRandomizer(priceDetails, price){
-  const templates = [
-    `Spice up your travel plans! $${price} round trip`,
-    `Get away today for $${price} round trip`,
-    `Great Deal! $${price} round trip`
-  ];
+  let number = Math.floor(Math.random() * Math.floor(3))
 
   if (`$${price}` === priceDetails) {
-    return <p style={{fontSize: "17px", fontWeight:"500", letterSpacing: "1px", width: "300px"}}>
-      {`${templates[Math.floor(Math.random() * Math.floor(3))]}`}
+    console.log("Hello");
+    if (number === 1) {
+      return <p style={{fontSize: "17px", fontWeight:"500", letterSpacing: "1px", width: "300px"}}>
+      {`Spice up your travel plans! $${price} round trip`}
 </p>     
+    } else if (number === 2) {
+      return <p style={{fontSize: "17px", fontWeight:"500", letterSpacing: "1px", width: "300px"}}>
+      {`Get away today for $${price} round trip`}
+</p> 
+    } else if (number === 0) {
+      return <p style={{fontSize: "17px", fontWeight:"500", letterSpacing: "1px", width: "300px"}}>
+      {`Great Deal! $${price} round trip`}
+</p> 
+    }
   } else{
     return <p style={{fontSize: "17px", fontWeight:"500", letterSpacing: "1px", width: "300px"}}>
-     {`${priceDetails}`};
+     {`${priceDetails}`}
     </p>
   }
 }
