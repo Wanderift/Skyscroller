@@ -1,6 +1,26 @@
 import React, { useState } from "react";
 import { Waypoint } from "react-waypoint";
 
+
+
+function priceRandomizer(priceDetails, price){
+  const templates = [
+    `Spice up your travel plans! $${price} round trip`,
+    `Get away today for $${price} round trip`,
+    `Great Deal! $${price} round trip`
+  ];
+
+  if (`$${price}` === priceDetails) {
+    return <p style={{fontSize: "17px", fontWeight:"500", letterSpacing: "1px", width: "300px"}}>
+      {`${templates[Math.floor(Math.random() * Math.floor(3))]}`}
+</p>     
+  } else{
+    return <p style={{fontSize: "17px", fontWeight:"500", letterSpacing: "1px", width: "300px"}}>
+     {`${priceDetails}`};
+    </p>
+  }
+}
+
 function ScrollList({ Origin, stack, items, ...props }) {
   const [entered, setEntered] = useState({});
   return (
@@ -56,8 +76,8 @@ function ScrollList({ Origin, stack, items, ...props }) {
                     <div className="deal">
                       <div className="row">
                         <div className="col-8 col-md-8">
-                          <p style={{fontSize: "17px", fontWeight:"500", wordSpacing: "4px", letterSpacing: "1px"}}>Great Value less than usual Awesome Deal ${flight.Price}
-                           </p>
+                          {priceRandomizer(flight["Price details"], flight.Price)}
+
                           {/* <div className="less-then">$61 less than Usual</div> */}
                         </div>
                         <div className="col-4 col-md-4">
