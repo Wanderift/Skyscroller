@@ -12,6 +12,7 @@ import FrontierAirlines from "./Assets/images/Frontier_Airlines.png";
 import Jetblue from "./Assets/images/jetblue.png";
 import SpiritAirlines from "./Assets/images/Spirit_Airlines.png";
 import UnitedAirlines from "./Assets/images/united-airlines.png";
+import deltalogo from "./Assets/images/delta.png"
 
 import { types } from "./Assets/js/typeMap";
 
@@ -1341,7 +1342,7 @@ function App() {
                       <div className="row">
                         <div className="col-md-12">
                           <img
-                            src="Assets/images/delta.png"
+                            src={deltalogo}
                             style={{ height: "45px", width: "45px" }}
                             alt="alaska"
                           />
@@ -1427,7 +1428,7 @@ function App() {
                       <div className="row">
                         <div className="col-md-12">
                           <img
-                            src="Assets/images/Delta.png"
+                            src={deltalogo}
                             style={{ height: "45px", width: "45px" }}
                             alt="delta"
                           />
