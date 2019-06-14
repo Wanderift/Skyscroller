@@ -332,7 +332,7 @@ header.new-index .border-right::after {
 }
 #sticky {
   color: #000;
-  margin-left: -30px;
+  /* margin-left: -30px; */
   /*display: none;*/
 
   width: 250px;

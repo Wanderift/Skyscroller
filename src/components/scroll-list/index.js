@@ -56,7 +56,8 @@ function ScrollList({ Origin, stack, items, ...props }) {
                     <div className="deal">
                       <div className="row">
                         <div className="col-8 col-md-8">
-                          <p style={{fontSize: "16px", fontWeight:"500"}}>Great Value {flight["Price details"]}</p>
+                          <p style={{fontSize: "17px", fontWeight:"500", wordSpacing: "4px", letterSpacing: "1px"}}>Great Value less than usual Awesome Deal ${flight.Price}
+                           </p>
                           {/* <div className="less-then">$61 less than Usual</div> */}
                         </div>
                         <div className="col-4 col-md-4">

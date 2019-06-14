@@ -737,7 +737,7 @@ function App() {
           <div className="container-fluid">
             <div
               className="col-md-3 hidden_small"
-              style={{ paddingLeft: "90px" }}
+              // style={{ paddingLeft: "90px" }}
             >
               <Sticky>
                 
@@ -1332,7 +1332,7 @@ function App() {
                           />
                           <div className="title">Dallas - Las Vegas</div>
                           <div className="post-time">
-                            $178, 06/26/2019 - 08/28/2019
+                            $210, 01/20/2019 - 03/05/2019
                           </div>
                         </div>
                       </div>
@@ -1341,7 +1341,7 @@ function App() {
                       <div className="row">
                         <div className="col-md-12">
                           <img
-                            src="Assets/images/Alaska_Airlines.png"
+                            src="Assets/images/delta.png"
                             style={{ height: "45px", width: "45px" }}
                             alt="alaska"
                           />
@@ -1349,7 +1349,7 @@ function App() {
                             San Fransico, CA - New York, NY
                           </div>
                           <div className="post-time">
-                            $178, 06/26/2019 - 08/28/2019
+                            $52, 09/26/2019 - 12/12/2019
                           </div>
                         </div>
                       </div>
@@ -1366,7 +1366,7 @@ function App() {
                             Los Angeles - San Fransico, CA
                           </div>
                           <div className="post-time">
-                            $178, 06/26/2019 - 08/28/2019
+                            $32, 01/16/2019 - 02/02/2019
                           </div>
                         </div>
                       </div>
@@ -1381,7 +1381,7 @@ function App() {
                           />
                           <div className="title">New York - Chicago</div>
                           <div className="post-time">
-                            $178, 06/26/2019 - 08/28/2019
+                            $71, 05/31/2019 - 07/24/2019
                           </div>
                         </div>
                       </div>
@@ -1418,7 +1418,7 @@ function App() {
                           />
                           <div className="title">Dallas - Las Vegas</div>
                           <div className="post-time">
-                            $178, 06/26/2019 - 08/28/2019
+                            $208, 10/11/2019 - 11/08/2019
                           </div>
                         </div>
                       </div>
@@ -1435,7 +1435,7 @@ function App() {
                             San Fransico, CA - New York, NY
                           </div>
                           <div className="post-time">
-                            $178, 06/26/2019 - 08/28/2019
+                            $178, 05/26/2019 - 08/28/2019
                           </div>
                         </div>
                       </div>
@@ -1452,7 +1452,7 @@ function App() {
                             Los Angeles - San Fransico, CA
                           </div>
                           <div className="post-time">
-                            $178, 06/26/2019 - 08/28/2019
+                            $182, 04/19/2019 - 05/25/2019
                           </div>
                         </div>
                       </div>
@@ -1461,13 +1461,13 @@ function App() {
                       <div className="row">
                         <div className="col-md-12">
                           <img
-                            src="Assets/images/American_Airlines.png"
+                            src="Assets/images/Allegiant_Air.png"
                             style={{ height: "45px", width: "45px" }}
                             alt="american"
                           />
                           <div className="title">New York - Chicago</div>
                           <div className="post-time">
-                            $178, 06/26/2019 - 08/28/2019
+                            $56, 06/17/2019 - 07/28/2019
                           </div>
                         </div>
                       </div>
